@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.cursor/
+
+# 不要忽略 images/ 与 assets/ —— 部署到 Vercel 必须包含这些目录

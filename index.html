@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="个人作品集 — 市场营销 · 数据分析 · 跨界协作">
+  <title>孙雅娴 · 内容运营作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,800;1,9..144,300&family=Syne:wght@700;800&family=Noto+Sans+SC:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="has-ferrofluid lanyard-active">
+  <div id="ferrofluidBg" class="ferrofluid-container" aria-hidden="true"></div>
+  <div id="lanyardGate" class="lanyard-gate" aria-label="进入作品集">
+    <canvas class="lanyard-gate__rope" id="lanyardRope" aria-hidden="true"></canvas>
+    <div class="lanyard-gate__rig" id="lanyardRig">
+      <div class="lanyard-gate__clip" aria-hidden="true"></div>
+      <button type="button" class="lanyard-card" id="lanyardCard" aria-label="点击进入作品集">
+        <div class="lanyard-card__header">
+          <span class="lanyard-card__brand">孙雅娴.</span>
+        </div>
+        <div class="lanyard-card__photo">
+          <img src="/images/avatar.png" alt="" width="200" height="240" draggable="false">
+        </div>
+        <div class="lanyard-card__footer">
+          <span class="lanyard-card__name">孙雅娴</span>
+          <span class="lanyard-card__tag section-tag">PORTFOLIO</span>
+        </div>
+      </button>
+    </div>
+    <p class="lanyard-gate__hint">点击或拖拽工牌进入</p>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="page-transition" id="pageTransition" aria-hidden="true"></div>
+  <div class="page-transition page-transition--out" id="pageTransitionOut" aria-hidden="true"></div>
+  <header class="header" id="header">
+    <a href="#home" class="logo draw-hover" data-draw>孙雅娴.</a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="navMenu" aria-label="主导航">
+      <a href="#home" class="nav-link draw-hover" data-draw>关于我</a>
+      <a href="#portfolio" class="nav-link draw-hover" data-draw>案例复盘</a>
+      <a href="#toolkit" class="nav-link draw-hover" data-draw>工具箱</a>
+      <a href="#contact" class="nav-link draw-hover" data-draw>联系我</a>
+    </nav>
+  </header>
+  <main id="mainView">
+    <section class="section hero" id="home">
+      <div class="hero__grid">
+        <div class="hero__media">
+          <div class="avatar-wrap"><img class="avatar-img" src="/images/avatar.png" alt="孙雅娴" width="600" height="750" loading="eager"></div>
+        </div>
+        <div class="hero__content">
+          <p class="eyebrow section-tag">Hello · 你好</p>
+          <h1 class="hero__title hero-name">孙雅娴</h1>
+          <p class="hero__slogan hero-slogan split-text">互联网重度「受害者」，追求新鲜感与生命力。</p>
+          <p class="hero__text hero-intro">来具体了解一下我吧！</p>
+          <div class="hero__actions"><a href="/assets/孙雅娴简历.pdf" class="btn-glass draw-hover" data-draw id="resumeBtn" download="孙雅娴简历.pdf">下载简历</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="section portfolio" id="portfolio">
+      <div class="portfolio-pin-wrapper">
+        <div class="portfolio-pin-stage">
+          <p class="case-page__chapter section-tag">案例复盘</p>
+          <div class="portfolio-pin-grid">
+            <div class="portfolio-mask-stack">
+              <div class="portfolio-svg-layer" data-case="1">
+                <svg viewBox="0 0 100 100" class="draw-svg-element" aria-hidden="true">
+                  <path d="M55,10 L25,55 L50,55 L40,90 L75,40 L50,40 Z" />
+                </svg>
+              </div>
+              <div class="portfolio-svg-layer" data-case="2">
+                <svg viewBox="0 0 100 100" class="draw-svg-element" aria-hidden="true">
+                  <path d="M20,25 C20,25 25,20 50,20 C75,20 80,25 80,45 C80,65 70,70 50,70 C42,70 35,73 25,80 C28,70 20,65 20,45 Z M40,45 H42 M50,45 H52 M60,45 H62" />
+                </svg>
+              </div>
+              <div class="portfolio-svg-layer" data-case="3">
+                <svg viewBox="0 0 100 100" class="draw-svg-element" aria-hidden="true">
+                  <path d="M50,40 C40,20 15,25 20,50 C25,70 45,80 50,85 C55,80 75,70 80,50 C85,25 60,20 50,40 Z" />
+                </svg>
+              </div>
+            </div>
+            <div class="portfolio-text-panels">
+              <article class="case-text-panel is-active" data-case="1">
+                <p class="case-page__index case-number blur-text" data-blur-by="letters">01</p>
+                <h3 class="case-page__title case-title blur-text" data-blur-by="letters">品牌转型</h3>
+                <ul class="case-tags"><li class="tag blur-text" data-blur-by="letters">市场调研</li><li class="tag blur-text" data-blur-by="letters">数据分析</li><li class="tag blur-text" data-blur-by="letters">营销策略</li></ul>
+                <a href="#case/1" class="case-link blur-text draw-hover" data-draw data-blur-by="letters">了解更多</a>
+              </article>
+              <article class="case-text-panel" data-case="2">
+                <p class="case-page__index case-number blur-text" data-blur-by="letters">02</p>
+                <h3 class="case-page__title case-title blur-text" data-blur-by="letters">项目分析</h3>
+                <ul class="case-tags"><li class="tag blur-text" data-blur-by="letters">行业预测</li><li class="tag blur-text" data-blur-by="letters">数据清洗</li><li class="tag blur-text" data-blur-by="letters">提案产出</li></ul>
+                <a href="#case/2" class="case-link blur-text draw-hover" data-draw data-blur-by="letters">了解更多</a>
+              </article>
+              <article class="case-text-panel" data-case="3">
+                <p class="case-page__index case-number blur-text" data-blur-by="letters">03</p>
+                <h3 class="case-page__title case-title blur-text" data-blur-by="letters">日常审美</h3>
+                <ul class="case-tags"><li class="tag blur-text" data-blur-by="letters">摄影记录</li><li class="tag blur-text" data-blur-by="letters">审美表达</li></ul>
+                <a href="#case/3" class="case-link blur-text draw-hover" data-draw data-blur-by="letters">了解更多</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section toolkit" id="toolkit">
+      <div class="section-head">
+        <h2 class="section-title case-title split-text draw-hover" data-draw>工具箱</h2>
+        <p class="section-desc">高频使用工具</p>
+      </div>
+      <div class="tools-grid" id="toolsGrid" role="list">
+        <article class="tool-card" role="listitem" tabindex="0">
+          <div class="tool-card__glow" aria-hidden="true"></div>
+          <div class="tool-card__logo-wrap">
+            <svg class="tool-card__logo" viewBox="0 0 64 64" aria-hidden="true">
+              <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M22 24c0-6 4.5-10 10-10s10 4 10 10v4c0 5-4 7-10 7"/>
+              <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M42 40c0 6-4.5 10-10 10s-10-4-10-10v-4c0-5 4-7 10-7"/>
+              <circle fill="currentColor" cx="26" cy="16" r="2.5"/>
+              <circle fill="currentColor" cx="38" cy="48" r="2.5"/>
+            </svg>
+          </div>
+          <h3 class="tool-card__name">Python</h3>
+          <p class="tool-card__tagline">数据分析 · 自动化</p>
+          <ul class="tool-card__details">
+            <li>数据分析</li>
+            <li>数据清洗</li>
+            <li>自动化脚本</li>
+          </ul>
+        </article>
+        <article class="tool-card" role="listitem" tabindex="0">
+          <div class="tool-card__glow" aria-hidden="true"></div>
+          <div class="tool-card__logo-wrap">
+            <svg class="tool-card__logo" viewBox="0 0 64 64" aria-hidden="true">
+              <ellipse cx="32" cy="18" rx="16" ry="6" fill="none" stroke="currentColor" stroke-width="2.5"/>
+              <path fill="none" stroke="currentColor" stroke-width="2.5" d="M16 18v22c0 3.3 7.2 6 16 6s16-2.7 16-6V18"/>
+              <path fill="none" stroke="currentColor" stroke-width="2.5" d="M16 32c0 3.3 7.2 6 16 6s16-2.7 16-6"/>
+            </svg>
+          </div>
+          <h3 class="tool-card__name">SQL</h3>
+          <p class="tool-card__tagline">数据清洗 · 查询优化</p>
+          <ul class="tool-card__details">
+            <li>数据清洗</li>
+            <li>查询优化</li>
+            <li>数据库管理</li>
+          </ul>
+        </article>
+        <article class="tool-card" role="listitem" tabindex="0">
+          <div class="tool-card__glow" aria-hidden="true"></div>
+          <div class="tool-card__logo-wrap">
+            <svg class="tool-card__logo" viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="2.5"/>
+              <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M20 44c4-10 10-16 20-18"/>
+              <circle cx="32" cy="32" r="6" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="tool-card__name">Canva</h3>
+          <p class="tool-card__tagline">海报设计 · 社媒运营</p>
+          <ul class="tool-card__details">
+            <li>海报设计</li>
+            <li>社媒运营</li>
+            <li>视觉排版</li>
+          </ul>
+        </article>
+        <article class="tool-card" role="listitem" tabindex="0">
+          <div class="tool-card__glow" aria-hidden="true"></div>
+          <div class="tool-card__logo-wrap">
+            <svg class="tool-card__logo" viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="32" cy="14" r="7" fill="currentColor"/>
+              <circle cx="32" cy="32" r="7" fill="currentColor"/>
+              <circle cx="50" cy="32" r="7" fill="currentColor"/>
+              <circle cx="32" cy="50" r="7" fill="currentColor"/>
+              <circle cx="50" cy="50" r="7" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="tool-card__name">Figma</h3>
+          <p class="tool-card__tagline">UI设计 · 原型制作</p>
+          <ul class="tool-card__details">
+            <li>UI 设计</li>
+            <li>原型制作</li>
+            <li>组件系统</li>
+          </ul>
+        </article>
+        <article class="tool-card" role="listitem" tabindex="0">
+          <div class="tool-card__glow" aria-hidden="true"></div>
+          <div class="tool-card__logo-wrap">
+            <svg class="tool-card__logo" viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="12" y="12" width="40" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="12" y1="24" x2="52" y2="24" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="12" y1="36" x2="52" y2="36" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="28" y1="24" x2="28" y2="52" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="40" y1="24" x2="40" y2="52" stroke="currentColor" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <h3 class="tool-card__name">Excel</h3>
+          <p class="tool-card__tagline">数据整理 · 可视化</p>
+          <ul class="tool-card__details">
+            <li>数据整理</li>
+            <li>可视化</li>
+            <li>透视分析</li>
+          </ul>
+        </article>
+        <article class="tool-card" role="listitem" tabindex="0">
+          <div class="tool-card__glow" aria-hidden="true"></div>
+          <div class="tool-card__logo-wrap">
+            <svg class="tool-card__logo" viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="10" y="16" width="44" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+              <path fill="currentColor" d="M26 38V26l12 6-12 6z"/>
+            </svg>
+          </div>
+          <h3 class="tool-card__name">PowerPoint</h3>
+          <p class="tool-card__tagline">商业汇报 · PPT 设计</p>
+          <ul class="tool-card__details">
+            <li>商业汇报</li>
+            <li>PPT 设计</li>
+            <li>叙事逻辑</li>
+          </ul>
+        </article>
+        <article class="tool-card" role="listitem" tabindex="0">
+          <div class="tool-card__glow" aria-hidden="true"></div>
+          <div class="tool-card__logo-wrap">
+            <svg class="tool-card__logo" viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="14" y="10" width="36" height="44" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="22" y1="22" x2="42" y2="22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="22" y1="30" x2="42" y2="30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="22" y1="38" x2="36" y2="38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="22" y1="46" x2="40" y2="46" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="tool-card__name">Word</h3>
+          <p class="tool-card__tagline">文档撰写 · 排版编辑</p>
+          <ul class="tool-card__details">
+            <li>文案撰写</li>
+            <li>排版编辑</li>
+            <li>长文整理</li>
+          </ul>
+        </article>
+        <article class="tool-card" role="listitem" tabindex="0">
+          <div class="tool-card__glow" aria-hidden="true"></div>
+          <div class="tool-card__logo-wrap">
+            <svg class="tool-card__logo" viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="32" cy="32" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/>
+              <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M32 14v6M32 44v6M14 32h6M44 32h6"/>
+              <path fill="currentColor" d="M32 18l1.8 5.5h5.8l-4.7 3.4 1.8 5.5L32 29l-4.7 3.4 1.8-5.5-4.7-3.4h5.8z"/>
+              <circle fill="currentColor" cx="48" cy="20" r="2.5"/>
+              <circle fill="currentColor" cx="18" cy="44" r="2"/>
+            </svg>
+          </div>
+          <h3 class="tool-card__name">AI</h3>
+          <p class="tool-card__tagline">内容生成 · 效率提升</p>
+          <ul class="tool-card__details">
+            <li>内容生成</li>
+            <li>创意辅助</li>
+            <li>工作流自动化</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="section contact" id="contact">
+      <div class="section-head">
+        <h2 class="section-title case-title split-text draw-hover" data-draw>联系我</h2>
+        <p class="section-desc">期待您的联络。</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="contact-label">电话</span>
+          <span class="contact-value" id="phoneValue">138-4564-5631</span>
+          <button type="button" class="copy-btn draw-hover" data-draw data-copy="138-4564-5631">复制</button>
+        </div>
+        <div class="contact-card">
+          <span class="contact-label">邮箱</span>
+          <a class="contact-value draw-hover" data-draw href="mailto:yaxiansun@outlook.com">yaxiansun@outlook.com</a>
+          <button type="button" class="copy-btn draw-hover" data-draw data-copy="yaxiansun@outlook.com">复制</button>
+        </div>
+        <div class="contact-card">
+          <span class="contact-label">微信</span>
+          <span class="contact-value" id="wechatValue">x3081054139</span>
+          <button type="button" class="copy-btn draw-hover" data-draw data-copy="x3081054139">复制</button>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer"><p>2026 孙雅娴 · 个人网站</p></footer>
+  </main>
+  <aside class="case-view" id="caseView" aria-hidden="true">
+    <button type="button" class="case-back draw-hover" data-draw id="caseBack">← 返回</button>
+    <article class="case-detail" id="caseDetail"></article>
+  </aside>
+  <div class="draw-layer" id="drawLayer" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script type="module" src="ferrofluid.js"></script>
+  <script src="lanyard.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
