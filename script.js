@@ -6,10 +6,10 @@
       title: '品牌转型',
       subtitle: '数据驱动品牌心智重塑，定位新中式浴室美学，打通从洞察到转化的全链路闭环',
       images: [
-        '/images/case-1/brand-insight.png',
-        '/images/case-1/python-analysis.png',
-        '/images/case-1/survey-data.png',
-        '/images/case-1/packaging-design.png'
+        'brand-insight.png',
+        'python-analysis.png',
+        'survey-data.png',
+        'packaging-design.png'
       ],
       body: '<h4>项目背景</h4><p>传统国货销量下滑，面临用户转化断层，品牌刻板印象严重。</p><h4>核心行动</h4><ul><li>问卷设计与调研，汇总并利用 Python 进行数据清洗，剔除异常数据噪声，构建透视表。</li><li>通过所获数据更新消费者画像，并结合市场分析与品牌调性，更新输出符合新中式美学的产品。</li><li>策划新型营销渠道，锁定小红书等各大社媒增加曝光，规划与新式茶饮跨界联动，推出限定礼盒与赠品，快速打破圈层壁垒。</li></ul>'
     },
@@ -17,10 +17,10 @@
       title: '项目分析',
       subtitle: '区域城市规模预测与物流优化，为进入决策提供量化依据，构架供应链商业模型。',
       images: [
-        '/images/case-2/business-plan-pages.png',
-        '/images/case-2/presentation-deck.png',
-        '/images/case-2/table-of-contents.png',
-        '/images/case-2/sql-data.png'
+        'business-plan-pages.png',
+        'presentation-deck.png',
+        'table-of-contents.png',
+        'sql-data.png'
       ],
       body: '<h4>项目背景</h4><p>预制菜产业高速成长期，冷链成本与损耗率直接决定商业模式可行性，项目多维分析切入逻辑。</p><h4>核心动作</h4><ul><li>通过 SWOT 分析解构宏观生态，直击 B 端商户在时效约束下的冷链高折损痛点，完成从行业趋势到商业机会的精准捕获。</li><li>依托商业模式画布，设计智慧中枢系统的核心价值主张与双渠道盈利闭环，产出系统级架构流程图。</li><li>运用 SQL 清洗高并发订单流、拦截过滤异常数据，在 Excel 中通过双变量敏感度分析，确定项目盈亏平衡点。</li></ul>'
     },
@@ -28,10 +28,10 @@
       title: '日常审美',
       subtitle: '视觉语言是日常沉淀与积累的。',
       images: [
-        '/images/case-4/design-collage.png',
-        '/images/case-4/concert-collage.png',
-        '/images/case-4/travel-collage.png',
-        '/images/case-4/food-collage.png'
+        'design-collage.png',
+        'concert-collage.png',
+        'travel-collage.png',
+        'food-collage.png'
       ],
       body: '<h4>灵感数据库</h4><p>热爱生活喜欢记录，尝试与追求一切新鲜事物。</p><h4>审美训练</h4><ul><li>十年绘画功底，积累了审美与艺术表达能力。</li><li>多年社媒高速冲浪用户，国内外演出爱好者，喜欢穿搭、美食、旅行。</li></ul><h4>个人价值</h4><p>审美敏感度反哺品牌内容调性把控，缩短从概念到成稿的视觉沟通成本。</p>'
     }
